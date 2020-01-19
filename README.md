@@ -2,4 +2,4 @@ Word_Collector 'A simple WebExtention (Add-on) that will help to add wrongly typ
 
 To use this properly - Run the back-end Service for this extension.
 
-![Image of WC](http://prntscr.com/qpuugi)
+![Image of WC](https://i.ibb.co/fXHprz5/wcol.png)
