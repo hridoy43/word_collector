@@ -1,0 +1,43 @@
+{
+    "manifest_version": 2,
+    "name": "Word Collector",
+    "version": "1.0",
+    "description": "This Extention will help to add wrongly Typed bangla word to spell_checker database.",
+    "applications": {
+        "gecko": {
+            "id": "wc-hridoy43@gmail.com"
+        }
+    },
+    "icons": {
+        "48": "icons/sa-48.png",
+        "96": "icons/sa-96.png"
+    },
+    "content_scripts": [
+        {
+            "matches": [
+                "*://*/*"
+            ],
+            "js": [
+                "wc.js"
+            ]
+        }
+    ],
+    "background": {
+        "scripts": [
+            "socket.io.js",
+            "background-script.js"
+        ]
+    },
+    "permissions": [
+        "menus",
+        "contextMenus",
+        "notifications",
+        "storage",
+        "activeTab",
+        "tabs"
+    ],
+    "browser_action": {
+        "default_icon": "icons/sa-32.png",
+        "default_title": "Word Collector"
+    }
+}
